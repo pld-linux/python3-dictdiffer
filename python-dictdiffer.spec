@@ -7,7 +7,7 @@
 Summary:	Dictdiffer is a library that helps you to diff and patch dictionaries
 Name:		python-%{module}
 Version:	0.8.1
-Release:	4
+Release:	5
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/dictdiffer/
