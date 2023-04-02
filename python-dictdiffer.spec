@@ -4,8 +4,10 @@
 %bcond_without	python3 # CPython 3.x module
 
 %define		module		dictdiffer
-Summary:	Dictdiffer is a library that helps you to diff and patch dictionaries
+Summary:	Dictdiffer - a library that helps you to diff and patch dictionaries
+Summary(pl.UTF-8):	Dictdiffer - biblioteka pomagająca porównywać i łatać słowniki
 Name:		python-%{module}
+# keep 0.8.x here for python2 support
 Version:	0.8.1
 Release:	6
 License:	MIT
@@ -32,14 +34,23 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Dictdiffer is a helper module that helps you to diff and patch
 dictionaries.
 
+%description -l pl.UTF-8
+Dictdiffer to moduł pomocniczy, pomagający porównywać i łatać
+słowniki.
+
 %package -n python3-%{module}
-Summary:	Dictdiffer is a library that helps you to diff and patch dictionaries
+Summary:	Dictdiffer - a library that helps you to diff and patch dictionaries
+Summary(pl.UTF-8):	Dictdiffer - biblioteka pomagająca porównywać i łatać słowniki
 Group:		Libraries/Python
 Requires:	python3-modules >= 1:3.4
 
 %description -n python3-%{module}
 Dictdiffer is a helper module that helps you to diff and patch
 dictionaries.
+
+%description -n python3-%{module} -l pl.UTF-8
+Dictdiffer to moduł pomocniczy, pomagający porównywać i łatać
+słowniki.
 
 %prep
 %setup -q -n %{module}-%{version}
