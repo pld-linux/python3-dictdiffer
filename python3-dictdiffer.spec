@@ -9,7 +9,7 @@ Summary:	Dictdiffer - a library that helps you to diff and patch dictionaries
 Summary(pl.UTF-8):	Dictdiffer - biblioteka pomagająca porównywać i łatać słowniki
 Name:		python3-%{module}
 Version:	0.9.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/dictdiffer/
